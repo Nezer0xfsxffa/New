@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="7.js"></script>
+	<audio id="audio" src="audio.mp3" ></audio>
+	<title>News Portal</title>
+    <link rel="stylesheet" type="text/css" href="7.css">
+</head>
+<body>
+	<header>
+		<h1 class="text-center mb-4">News Portal</h1>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Политика</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Экономика</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Спорт</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Наука и технологии</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<form action="/submit-form" method="post" class="mb-5">
+			<div class="form-group">
+			  <label for="name">Name:</label>
+			  <input type="text" class="form-control" id="name" name="name">
+			</div>
+		
+			<div class="form-group">
+			  <label for="email">Email:</label>
+			  <input type="email" class="form-control" id="email" name="email">
+			</div>
+		
+			<div class="form-group">
+			  <label for="gender">Gender:</label>
+			  <div class="form-check">
+				<input class="form-check-input" type="radio" id="male" name="gender" value="male">
+				<label class="form-check-label" for="male">Male</label>
+			  </div>
+			  <div class="form-check">
+				<input class="form-check-input" type="radio" id="female" name="gender" value="female">
+				<label class="form-check-label" for="female">Female</label>
+			  </div>
+			</div>
+		
+			<div class="form-group">
+			  <label for="country">Country:</label>
+			  <select class="form-control" id="country" name="country">
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="uk">UK</option>
+				<option value="kazakhstan">Kazakhstan</option>
+			  </select>
+			</div>
+		
+			<div class="form-group">
+			  <label for="message">Message:</label>
+			  <textarea class="form-control" id="message" name="message"></textarea>
+			</div>
+		
+			<button type="submit" class="btn btn-primary">Submit</button>
+		  </form>
+		  <table class="table">
+			<caption>Examples</caption>
+			<thead>
+			  <tr>
+				<th scope="col">First Name</th>
+				<th scope="col">Last Name</th>
+				<th scope="col">Age</th>
+				<th scope="col">Gender</th>
+				<th scope="col">Country</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>32</td>
+    <td>Male</td>
+    <td>US</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Cole</td>
+    <td>28</td>
+    <td>Female</td>
+    <td>UK</td>
+  </tr>
+</tbody>
+</table>
+<section>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Последние новости</h2>
+        <article class="mb-4">
+          <h3>Новая партия iPhone</h3>
+          <img src="https://itumnik.ru/wp-content/uploads/2022/12/4.-Korobki-2048x1536.jpg" alt="Новые модели iPhone" class="img-fluid" style="max-height: 200px;">
+          <p>Компания Apple анонсировала новую линейку iPhone, которая включает в себя <span class="highlight">iPhone 13</span>, iPhone 13 Mini, iPhone 13 Pro и iPhone 13 Pro Max. Устройства получили более быстрые процессоры и улучшенные камеры.</p>
+          <button class="read-more">Читать далее</button>
+        </article>
+        <article class="mb-4">
+          <h3>Конфликт на границе Украины</h3>
+          <img src="https://censoru.net/uploads/posts/2022-10/1665888428_2412731.jpg" alt="Конфликт на границе Украины" class="img-fluid" style="max-height: 200px;">
+          <p>Российские войска продолжают скапливаться на границе с Украиной, вызывая опасения украинского правительства и международного сообщества. Ситуация остается напряженной.</p>
+          <button class="read-more">Читать далее</button>
+        </article>
+        <article class="mb-4">
+          <h3>Экономические новости</h3>
+          <p>Компания Amazon объявила о запуске новой службы доставки, которая будет осуществляться с помощью дронов. Новая служба позволит ускорить процесс доставки и снизить затраты.</p>
+          <img src="https://www.the-sun.com/wp-content/uploads/sites/6/2020/09/amazon_dronejpg-JS328587997.jpg" alt="Amazon drone delivery" class="img-fluid" style="max-height: 200px;">
+		  <button class="read-more">Читать далее</button>
+		</article>
+	  </div>
+	  <div class="col-md-6">
+		<h2>Политика</h2>
+		<article class="mb-4">
+		  <h3>Выборы в Германии</h3>
+		  <p>В Германии состоялись выборы в Бундестаг. Консервативная партия Ангелы Меркель потеряла большую часть своих голосов в пользу зеленых и социал-демократов.</p>
+		  <img src="https://kion546.b-cdn.net/2021/09/hypatia-h_3cdf23bad9c087d9397eaf6051497646-h_ac440e1718fa823eaf978295cb7f3c4b-300-scaled.jpg" alt="Флаг Германии" class="img-fluid" style="max-height: 200px;">
+		  <button class="read-more">Читать далее</button>
+		</article>
+		<article class="mb-4">
+		  <h3>Трамп против Байдена</h3>
+		  <p>Бывший президент США Дональд Трамп заявил, что он продолжает бороться за честность выборов, которые он утверждает, что были украдены у него в пользу Джо Байдена.</p>
+		  <img src="https://static.ukrinform.com/photos/2020_09/1599228979-836.png" alt="Трамп против Байдена" class="img-fluid" style="max-height: 200px;">
+		  <button class="read-more">Читать далее</button>
+		</article>
+	  </div>
+	</div>
+</section>
+<section>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Спорт</h2>
+        <article class="mb-4">
+          <h3>Новости футбола</h3>
+          <p>В последнем матче Английской Премьер-лиги команда Манчестер Сити победила команду Манчестер Юнайтед со счетом 3:1.</p>
+          <img src="https://playmaker24.ru/wp-content/uploads/2023/04/imgonline-com-ua-resize-xge4kg1tje4.jpg" alt="Премьер-лига" class="img-fluid" style="max-height: 200px;">
+          <button class="read-more">Читать далее</button>
+        </article>
+        <article class="mb-4">
+			<h3>Конец карьеры Федерера</h3>
+			<p>Роджер Федерер объявил, что он завершит свою карьеру в теннисе после Открытого чемпионата США в этом году.</p>
+			<img src="https://news.store.rambler.ru/img/577adc8f15cc74fde39e2a40ea98eab8?img-format=auto&img-1-resize=height:710" alt="Роджер Федерер" class="img-fluid" style="max-height: 200px;">
+			<button class="read-more">Читать далее</button>
+			</article>
+			</div>
+			<div class="col-md-6">
+				<h2>Наука и технологии</h2>
+				<article class="mb-4">
+				  <h3>Новый робот Boston Dynamics</h3>
+				  <p>Компания Boston Dynamics анонсировала нового робота, который может двигаться на двух ногах и умеет выполнять различные задачи.</p>
+				  <img src="https://cdn.igromania.ru/mnt/news/3/5/9/7/1/d/75036/0de81017668f8857_1200xH.jpg" alt="Новый робот" class="img-fluid" style="max-height: 200px;">
+				  <button class="read-more">Читать далее</button>
+				</article>
+				<article class="mb-4">
+				  <h3>Новые научные исследования</h3>
+				  <p>Ученые из разных стран объединились для проведения исследования в области климатических изменений и их влияния на окружающую среду.</p>
+				  <img src="https://ekogradmoscow.ru/images/00/1509/3009/s1200730067.jpg" alt="Исследования" class="img-fluid" style="max-height: 200px;">
+				  <button class="read-more">Читать далее</button>
+				</article>
+			  </div>
+			</div>
+		</section>
+		<footer class="mt-4 py-3 bg-dark text-white">
+		  <div class="container text-center">
+			<p>Copyright &copy; News Portal</p>
+		  </div>
+		</footer>
